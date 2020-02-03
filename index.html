@@ -19,9 +19,9 @@
           <div class="card-content">
             <span class="card-title">Task List</span>
             <div class="row">
-              <form id="task-form" action="index.php">
+              <form id="task-form" onsubmit="add()">
                 <div class="input-field col s12">
-                  <input type="text" name="task" id="task" value="Walk the dog">
+                  <input type="text" name="task" id="task" value="Walk the dog"> <!-- Input for tasks-->
                   <label for="task">New Task</label>
                 </div>
                 <select>
@@ -30,11 +30,14 @@
                   <option value="3">3</option>
                 </select>
             </div>
-            <input type="submit" value="Add Task" class="btn">
+            <button type="button" class="btn" name="button" onclick="add()">Add Task</button>
             </form>
           </div>
           <div class="card-action">
             <h5 id="task-title">Tasks</h5>
+
+
+
             <ul class="collection">
               <li class="collection-item">
                 List Item
@@ -67,6 +70,9 @@
                 </a>
               </li>
             </ul>
+
+
+
             <a class="clear-tasks btn black" href="#">Clear Tasks</a>
           </div>
         </div>
