@@ -25,6 +25,6 @@ function add(){
 
   var lists = document.getElementsByClassName('collection');
   var list = lists[0];
-  //console.log(list);
+
   list.appendChild(elem);
 }
