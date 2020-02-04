@@ -1,30 +1,17 @@
-//document.querySelector('li').style.background = 'yellow';
+let val;
 
-//const items = document.getElementsByClassName('collection-item');
+const list = document.querySelector('ul.collection');
+const listItem = document.querySelector('li.collection-item:first-child');
 
-//console.log(items[0]);
-//items[0].style.color = 'red';
-
-
-function add(){
-  var task = document.forms['task-form']['task'].value;
-  //console.log(task);
-
-  var elem = document.createElement('li');
-  elem.className = "collection-item";
-  var node = document.createTextNode(task);
-  var cross = document.getElementsByClassName('delete-item');
-  cross = cross[0];
+// 1 - Element
+// 2 - Attribute
+// 3 - Text Node
+// 8 - Comment
+// 9 - Document itself
+// 10 - Doctype
 
 
-  console.log(elem);
-  console.log(node);
 
-  elem.appendChild(node);
-  elem.appendChild(cross);
+val = listItem;
 
-  var lists = document.getElementsByClassName('collection');
-  var list = lists[0];
-
-  list.appendChild(elem);
-}
+console.log(val);
