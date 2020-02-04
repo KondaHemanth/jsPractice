@@ -1,9 +1,9 @@
-document.querySelector('li').style.background = 'yellow';
+//document.querySelector('li').style.background = 'yellow';
 
-const items = document.getElementsByClassName('collection-item');
+//const items = document.getElementsByClassName('collection-item');
 
 //console.log(items[0]);
-items[0].style.color = 'red';
+//items[0].style.color = 'red';
 
 
 function add(){
@@ -13,18 +13,18 @@ function add(){
   var elem = document.createElement('li');
   elem.className = "collection-item";
   var node = document.createTextNode(task);
-  var cross = document.getElementsByClassName('delete-item');
-  cross = cross[0];
 
 
-  console.log(elem);
-  console.log(node);
+  var cross = document.createElement('a');
+  cross.className = 'delete-item secondary-content';
+  cross.innerHTML = '<i class="fa fa-remove"></i>';
 
   elem.appendChild(node);
   elem.appendChild(cross);
 
   var lists = document.getElementsByClassName('collection');
+  //console.log(lists);
   var list = lists[0];
-  //console.log(list);
+
   list.appendChild(elem);
 }
